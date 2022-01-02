@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Belleza:regular);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belleza', sans-serif;
+}
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #0e0e0e;
+}
+
+.container {
+    display: flex;
+    column-gap: 5rem;
+    align-items: center;
+}
+.card {
+    width: 400px;
+    aspect-ratio: 1;
+    border: 2px solid #fff;
+    text-align: center;
+    padding: 4rem 0;
+    color: #fff;
+    border-radius: 1rem;
+}
+.card i {
+    font-size: 8rem;
+}
+
+.success {
+    background-image: linear-gradient(to top right, #9acd32, #00ffaa);
+    box-shadow: 0 0 .7rem rgb(0, 255, 0);
+}
+.error {
+    background-image: linear-gradient(to top right, #ff5773, #ff0000);
+    box-shadow: 0 0 .7rem rgb(255, 0, 0);
+}
+
+.card h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin: 1rem 0;
+}
+.card p {
+    font-size: 1.3rem;
+}
+
+.card button {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border: 2px solid;
+    padding: .7rem 2rem;
+    border-radius: 100vw;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    transition: 200ms ease-in-out background-color,
+                200ms ease-in-out color,
+                200ms ease-in-out border-color;
+}
+
+.success button {
+    border-color: #00a500;
+    box-shadow: 0 0 .5rem rgba(0, 255, 0, .6);
+    color: #9acd32;
+}
+
+.error button {
+    border-color: #ff0000;
+    box-shadow: 0 0 .5rem rgba(255, 0, 0, .6);
+    color: #ff0000;
+}
+
+.card button:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.success button:hover {
+    background-color: #9acd32;
+}
+.error button:hover {
+    background-color: #ff0000;
+}
+
+/* Please subscribe to this channel since I upload everyday videos related to web development - HTML CSS and JavaScript */
+/* Thanks for watching... */
